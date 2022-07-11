@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcreate_react_app=self.webpackChunkcreate_react_app||[]).push([[883],{429:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var r=n(7294);function a(){return r.createElement("h1",null,"404")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-94074a2d890dbb179e76.js.map
