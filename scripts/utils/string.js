@@ -21,9 +21,25 @@ function decrypt(str) {
   return str;
 }
 
+function escapeFilePathForPattern(filePath) {
+  const arr = [];
+  for (const c of filePath) {
+    if (c === "[") {
+      arr.push("[[]");
+    } else if (c === "]") {
+      arr.push("[]]");
+    } else {
+      arr.push(c);
+    }
+  }
+
+  return arr.join("");
+}
+
 module.exports = {
   naturalCompare,
   reverse,
   padNumber,
   decrypt,
+  escapeFilePathForPattern,
 };

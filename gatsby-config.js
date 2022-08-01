@@ -33,5 +33,11 @@ module.exports = {
         typeName: "Json",
       },
     },
+    {
+      resolve: "gatsby-plugin-compile-es6-packages",
+      options: {
+        modules: ["miko"],
+      },
+    },
   ],
 };

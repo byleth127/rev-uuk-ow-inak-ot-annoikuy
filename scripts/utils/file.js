@@ -33,6 +33,11 @@ async function getDirectories(parentPath) {
     .map((dirent) => dirent.name);
 }
 
+async function getFileSize(filePath) {
+  const stats = await fsPromises.stat(filePath);
+  return stats.size;
+}
+
 function getFileExtension(filePath) {
   return path.extname(filePath).substring(1);
 }
@@ -42,4 +47,5 @@ module.exports = {
   getDirectories,
   getFileExtension,
   deleteFiles,
+  getFileSize,
 };
